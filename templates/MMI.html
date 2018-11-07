@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Murdoch Mood Indicator</title>
+    <link href="../static/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.13.0.min.css" type="text/css" />
+    <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.13.0.min.js"></script>
+  </head>
+
+  <body>
+    <div class="MMI">
+      <p>I know what you're thinking... "How is Rupert Murdoch feeling today?"</p>
+      <p>Well, now using the latest technology and up to the minute stock market data your days of uncertainty are over!</p>
+      <p>Introducing the the Murdoch Mood Indicator!</p>
+
+      {{script1 | safe}}
+      {{div1 | safe}}
+
+      <p><img src="{{caption_elements[2]}}" class="center"</p>
+      <p><center>Over the last month Newscorp closed mostly <b>{{caption_elements[0]}}</b>. Rupert Murdoch is <b>{{caption_elements[1]}}</b>!</center></p>
+    </div>
+  </body>
+</html>
